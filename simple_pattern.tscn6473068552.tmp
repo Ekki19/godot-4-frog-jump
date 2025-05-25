@@ -1,0 +1,35 @@
+[gd_scene load_steps=4 format=3 uid="uid://c4nwfwfjnh7ul"]
+
+[ext_resource type="PackedScene" uid="uid://b2u0fb5aln28d" path="res://water.tscn" id="1_f3hu6"]
+[ext_resource type="Script" uid="uid://brvy8mkcu3h1t" path="res://simple_pattern.gd" id="2_cfuig"]
+[ext_resource type="PackedScene" uid="uid://b5berf5o84l8t" path="res://lilypad.tscn" id="2_tcbbn"]
+
+[node name="simple_pattern" type="Node2D"]
+
+[node name="water" parent="." instance=ExtResource("1_f3hu6")]
+position = Vector2(150, 287)
+
+[node name="lilypads" type="Node2D" parent="."]
+position = Vector2(150, 287)
+scale = Vector2(0.820313, 0.707031)
+script = ExtResource("2_cfuig")
+
+[node name="lilypad" parent="lilypads" instance=ExtResource("2_tcbbn")]
+position = Vector2(118.248, 321.061)
+scale = Vector2(0.151939, 0.143567)
+
+[node name="lilypad3" parent="lilypads" instance=ExtResource("2_tcbbn")]
+position = Vector2(49.9809, 53.7459)
+scale = Vector2(0.168837, 0.158237)
+
+[node name="lilypad4" parent="lilypads" instance=ExtResource("2_tcbbn")]
+position = Vector2(-62.1714, -101.834)
+scale = Vector2(0.149558, 0.140804)
+
+[node name="lilypad5" parent="lilypads" instance=ExtResource("2_tcbbn")]
+position = Vector2(85.3333, -189.525)
+scale = Vector2(0.1611, 0.144496)
+
+[node name="lilypad2" parent="lilypads" instance=ExtResource("2_tcbbn")]
+position = Vector2(-48.7619, 181.039)
+scale = Vector2(0.163843, 0.153235)

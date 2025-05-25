@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://b5berf5o84l8t"]
+
+[ext_resource type="Texture2D" uid="uid://b3soxeblpxrw1" path="res://assets/lilypad.png" id="1_x1jnl"]
+
+[node name="lilypad" type="Sprite2D"]
+position = Vector2(227.938, 506.75)
+scale = Vector2(0.122925, 0.102051)
+texture = ExtResource("1_x1jnl")
